@@ -2,37 +2,129 @@
 
 <html lang="en">
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128652951-4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128652951-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-128652951-4');
-  </script>
-  <meta charset="utf-8">
+        function gtag() {
+            dataLayer.push(arguments);
+        }
 
-  <title>Ethan Zhang</title>
-  <meta name="description" content="This page is still being worked on!">
-  <meta name="author" content="Ethan Zhang">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128652951-4');
+    </script>
+    <meta charset="utf-8">
+
+    <title>Ethan Zhang</title>
+    <meta content="This page is still being worked on!" name="description">
+    <meta content="Ethan Zhang" name="author">
+    <script crossorigin="anonymous"
+            integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+            src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            background-color: #fff5d7;
+        }
+
+        span {
+            font-size: 1.85rem;
+            max-width: 390px;
+            width: 100%;
+        }
+
+        .hello {
+            font-size: 5rem;
+            margin-left: -1px;
+            margin-top: -5px;
+            white-space: nowrap;
+        }
+
+        .corner {
+            opacity: 0;
+            transition: opacity 500ms ease;
+            position: absolute;
+            z-index: 10;
+            width: min(45vh, 45vw);
+            height: min(45vh, 45vw);
+            max-width: min(45vh, 45vw);
+            max-height: min(45vh, 45vw);
+            background-color: #7e8ea0;
+        }
+
+        .corner:hover {
+            transition: opacity 500ms ease;
+            opacity: 1;
+        }
+
+        .corner-1 {
+            top: 0;
+            left: 0;
+            border-radius: 0 0 min(45vh, 45vw) 0;
+        }
+
+        .corner-2 {
+            top: 0;
+            right: 0;
+            border-radius: 0 0 0 min(45vh, 45vw);
+        }
+
+        .corner-3 {
+            bottom: 0;
+            left: 0;
+            border-radius: 0 min(45vh, 45vw) 0 0;
+            background-color: #94b4be;
+        }
+
+        .corner-4 {
+            bottom: 0;
+            right: 0;
+            border-radius: min(45vh, 45vw) 0 0 0;
+        }
+
+        .middle {
+            padding: calc(min(45vh, 45vw) / 3);
+            border-radius: min(45vh, 45vw);
+        }
+    </style>
 </head>
 
-<body style="
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
-             flex-direction: column;
-             background-color: #fff5d7;
-    font-size: 5rem;">
-  Hello World
-  <span style="font-size: 1.8rem; max-width: 394px">
-    This website has been in the works for <script>document.write(moment([2020,2,11]).fromNow(true));</script>.
-  </span>
+<body>
+<span class="hello">
+    Hello there!
+</span>
+<span>
+    My name is Ethan and I've been in the works for <script>document.write(moment([2004, 0, 1]).fromNow(true));</script>.
+</span>
+
+
+<span class="corner corner-1">
+
+</span>
+
+
+<span class="corner corner-2">
+
+</span>
+
+
+<span class="corner corner-3">
+
+</span>
+
+
+<span class="corner corner-4">
+
+</span>
+
 </body>
 </html>
